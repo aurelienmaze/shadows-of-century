@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    background-color: #020202;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* ---------------------------------  Section 1  ---------------------------------------- */
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: #020202BB;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(73, 73, 73, 1);
+  padding: 16px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  gap: 20px;
+  padding: 0 32px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #f2f2f2;
+}
+
+.logo {
+  width: 85px;
+  max-width: 100%;
+  aspect-ratio: 2.17;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: auto 0;
+}
+
+.nav-link {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.download-button {
+  font-family: Inter, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9C4647;
+  color: #fff;
+  border: 1px solid #9C4647;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 8px 14px;
+  margin: auto 0;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .header-content {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .logo-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+  /* ---------------------------------  Section 2  ---------------------------------------- */
+
+  .project-progress {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: #fff;
+    line-height: 103%;
+    padding: 80px;
+  }
+
+  @media (max-width: 991px) {
+    .project-progress {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  .project-title {
+    align-self: center;
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: -0.96px;
+    margin-top: 16px;
+    font: 600 48px/92% Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .project-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  .project-subtitle {
+    align-self: center;
+    color: #828282;
+    text-align: center;
+    margin-top: 20px;
+    font: 400 20px/150% Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .project-subtitle {
+      max-width: 100%;
+    }
+  }
+
+  .project-date {
+    align-self: center;
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: -0.72px;
+    margin-top: 64px;
+    font: 36px/122% Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .project-date {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .achievements-title,
+  .difficulties-title,
+  .future-title {
+    font-family: Inter, sans-serif;
+    letter-spacing: -0.6px;
+    margin-top: 64px;
+  }
+
+  @media (max-width: 991px) {
+    .achievements-title,
+    .difficulties-title,
+    .future-title {
+      max-width: 100%;
+      margin: 40px 4px 0 0;
+    }
+  }
+
+  .achievements-description,
+  .difficulties-description,
+  .future-description {
+    letter-spacing: -0.36px;
+    margin-top: 25px;
+    font: 500 18px/31px Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .achievements-description,
+    .difficulties-description,
+    .future-description {
+      max-width: 100%;
+      margin-right: 4px;
+    }
+  }
+
+  .future-description {
+    margin-bottom: 16px;
+  }
